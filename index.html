@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Wikia Nitro</title>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+        <header id="header">
+            <h1>Wikia Nitro</h1>
+            <h2>The time has come. GIF avatars to everyone!</h2>
+        </header>
+        <div id="container">
+            <div id="login-container">
+                <h1>Log In</h1>
+                <form id="login">
+                    <input type="text" name="username" placeholder="Username"></input>
+                    <input type="password" name="password" placeholder="Password"></input>
+                    <input type="submit" name="submit" value="Log In"></input>
+                </form>
+            </div>
+            <div id="upload-container">
+                <h1>Upload Avatar</h1>
+                <form id="upload">
+                    <input type="file" id="upload-field" name="upload" accept="image/gif" disabled></input>
+                    <label for="upload-field" id="upload-notice">Select</label>
+                    <div id="preview">
+                        <div id="selector">
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" value="Upload" disabled></input>
+                </form>
+            </div>
+        </div>
+        <div id="spinner" class="hidden">
+            <svg width="78" height="78" viewBox="0 0 78 78" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(39, 39)">
+                    <circle fill="none" stroke-width="2" stroke-dasharray="239" stroke-dashoffset="239" stroke-linecap="round" r="38"></circle>
+                </g>
+            </svg>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+{
+    "name": "wikia-gif-avatar",
+    "version": "1.0.0",
+    "description": "Allows uploading of GIF avatars to Wikia",
+    "homepage": "https://github.com/KockaAdmiralac/wikia-gif-avatar",
+    "author": {
+        "name": "KockaAdmiralac",
+        "email": "1405223@gmail.com",
+        "url": "https://github.com/KockaAdmiralac"
+    },
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KockaAdmiralac/RM2GIF.git"
+    },
+    "bugs": {
+        "url": "https://github.com/KockaAdmiralac/Torus-standalone/issues"
+    },
+    "license": "CC-BY-SA-4.0",
+    "dependencies": {
+        "jimp": ">=0.2.28",
+        "request": "^2.34",
+        "request-promise-native": ">=1.0.0"
+    },
+    "devDependencies": {
+        "electron": "^1.2.0"
+    }
+}

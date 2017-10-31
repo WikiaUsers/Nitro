@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #F6F6F6;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+#container, #header {
+    margin: 0 auto;
+    padding: 25px 0;
+    border: 1px solid #CCC;
+    border-top: 0;
+    background-color: #FFF;
+}
+
+#header {
+    width: 768px;
+    margin-top: 19px;
+    color: #FFF;
+    background-color: #39424D;
+}
+
+#header h1 {
+    font-size: 1.6875rem;
+    line-height: 2rem;
+    margin-top: 0.2rem;
+    padding-bottom: 7px;
+    font-weight: 700;
+    -webkit-margin-before: 3.2px;
+    -webkit-margin-after: 0px;
+}
+
+#header h2 {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 766px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#container > div {
+    width: 40%;
+    margin: 0 25px 25px;
+}
+
+#container h1 {
+    text-align: left;
+    font-size: 16px;
+}
+
+#container input[type="text"], #container input[type="password"] {
+    width: 100%;
+    border: 0;
+    outline-style: none;
+    border-bottom: 1px solid #CCC;
+    padding-top: 13px;
+    height: 45px;
+    font-size: 14px;
+}
+
+#container input[type="text"]:disabled, #container input[type="password"]:disabled {
+    background-color: #FFF;
+}
+
+#container input[type="submit"], #upload-notice {
+    display: inline-block;
+    background-color: #00B7E0;
+    border: 0;
+    color: #FFF;
+    width: 100%;
+    font-size: 12px;
+    padding: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 14px;
+    transition: background-color 0.5s linear;
+}
+
+#container input[type="submit"]:hover:not(:disabled) {
+    background-color: #00647A;
+}
+
+#container input[type="submit"]:disabled, input[type="file"]:disabled + #upload-notice {
+    opacity: 0.5;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes circle {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#spinner {
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+#spinner svg {
+    display: block;
+    animation: spinner 0.5s linear infinite;
+    transform: translateZ(0);
+    left: auto;
+    margin: auto;
+    position: relative;
+    top: 30%;
+}
+
+#spinner svg circle {
+    animation: circle 1.25s linear infinite alternate-reverse;
+    stroke: #00B7E0;
+}
+
+.hidden, #upload-field {
+    display: none;
+}
