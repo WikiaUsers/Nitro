@@ -2,7 +2,7 @@
     "name": "wikia-gif-avatar",
     "version": "1.1.0",
     "description": "Allows uploading of GIF avatars to Wikia",
-    "homepage": "https://github.com/KockaAdmiralac/wikia-nitro",
+    "homepage": "https://dev.wikia.com/wiki/Nitro",
     "author": {
         "name": "KockaAdmiralac",
         "email": "1405223@gmail.com",
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/KockaAdmiralac/wikia-nitro.git"
+        "url": "git+https://github.com/WikiaUsers/wikia-nitro.git"
     },
     "bugs": {
         "url": "https://dev.wikia.com/wiki/Talk:Nitro"
