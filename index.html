@@ -1,38 +1,53 @@
 <html>
     <head>
-        <title>Wikia Nitro</title>
+        <title data-i18n="name"></title>
         <meta charset="utf-8" />
         <script type="text/javascript" src="js/main.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
     <body>
         <header id="header">
-            <h1>Wikia Nitro</h1>
-            <h2>The time has come. GIF avatars to everyone!</h2>
+            <div id="language">
+                <div id="toggle">
+                    <span data-i18n="language"></span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9l4-5H2" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div id="list">
+                    <ul><!-- Populated by JavaScript --></ul>
+                </div>
+            </div>        
+            <h1 data-i18n="name"></h1>
+            <h2 data-i18n="logo"></h2>
         </header>
         <div id="container">
             <div id="login-container">
-                <h1>Log In</h1>
+                <h1 data-i18n="login"></h1>
                 <form id="login">
-                    <input type="text" name="username" placeholder="Username"></input>
-                    <input type="password" name="password" placeholder="Password"></input>
-                    <input type="submit" name="submit" value="Log In"></input>
+                    <input type="text" name="username" data-i18n="username"></input>
+                    <input type="password" name="password" data-i18n="password"></input>
+                    <input type="submit" name="submit" data-i18n="login"></input>
                 </form>
+                <div id="login-error" class="error"></div>
+                <div id="login-success" class="success"></div>
             </div>
             <div id="upload-container">
-                <h1>Upload Avatar</h1>
+                <h1 data-i18n="upload-header"></h1>
                 <form id="upload">
-                    <input type="file" id="upload-field" name="upload" accept="image/gif" disabled></input>
-                    <label for="upload-field" id="upload-notice">Select</label>
+                    <input type="submit" name="select" data-i18n="select" disabled></input>
                     <div id="preview">
                         <div id="selector">
                         </div>
                     </div>
-                    <input type="submit" name="submit" value="Upload" disabled></input>
+                    <input type="submit" name="submit" data-i18n="upload" disabled></input>
                 </form>
+                <div id="upload-error" class="error"></div>
+                <div id="upload-success" class="success"></div>
             </div>
         </div>
         <div id="spinner" class="hidden">
+            <div id="progress"></div>
             <svg width="78" height="78" viewBox="0 0 78 78" xmlns="http://www.w3.org/2000/svg">
                 <g transform="translate(39, 39)">
                     <circle fill="none" stroke-width="2" stroke-dasharray="239" stroke-dashoffset="239" stroke-linecap="round" r="38"></circle>
