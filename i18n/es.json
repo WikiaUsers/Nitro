@@ -1,0 +1,21 @@
+{
+    "language": "Español",
+    "name": "Wikia Nitro",
+    "logo": "El tiempo ha llegado. ¡Avatares GIF para todos!",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "filetype": "Archivo GIF",
+    "select": "Seleccionar",
+    "upload": "Subir",
+    "upload-header": "Subir el avatar",
+    "login-success": "¡Acceso exitoso!",
+    "login-badpass": "¡Nombre de usuario u contraseña incorrectos!",
+    "login-unknown": "Un error desconocido ocurrió durante el inicio del sesión.",
+    "login-auto": "¡Inició sesión automáticamente!",
+    "upload-success": "¡Avatar fue subido con éxito!",
+    "upload-badsize": "Avatar es más grande que 512kB o no es cuadrado.",
+    "upload-lstat": "No pudo determinar el tamaño del avatar.",
+    "upload-unknown": "Un error desconocido ocurrió durante la subida del avatar."
+}
