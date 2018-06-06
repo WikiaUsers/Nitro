@@ -1,0 +1,21 @@
+{
+    "language": "Polski",
+    "name": "Wikia Nitro",
+    "logo": "Nadszedł czas. Awatary GIF dla każdego!",
+    "login": "Zaloguj się",
+    "logout": "Wyloguj się",
+    "username": "Nazwa użytkownika",
+    "password": "Hasło",
+    "filetype": "Pliki GIF",
+    "select": "Wybierz",
+    "upload": "Prześlij",
+    "upload-header": "Prześlij awatar",
+    "login-success": "Zalogowano pomyślnie!",
+    "login-badpass": "Nieprawidłowa nazwa użytkownika lub hasło!",
+    "login-unknown": "Podczas logowania wystąpił nieznany błąd",
+    "login-auto": "Zalogowano automatycznie!",
+    "upload-success": "Awatar pomyślnie przesłany!",
+    "upload-badsize": "Awatar waży więcej niż 512kB, lub nie ma kształtu kwadratu.",
+    "upload-lstat": "Nie udało się ustalić rozmiaru awataru.",
+    "upload-unknown": "Podczas przesyłania awataru wystąpił nieznany błąd."
+}
