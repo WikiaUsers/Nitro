@@ -8,6 +8,16 @@
         "email": "1405223@gmail.com",
         "url": "https://github.com/KockaAdmiralac"
     },
+    "contributors": [
+        {
+            "name": "RinaVanguard",
+            "url": "https://github.com/RinaVanguard"
+        },
+        {
+            "name": "Railfail536",
+            "url": "https://spolecznosc.wikia.com/wiki/User:Railfail536"
+        }
+    ],
     "main": "main.js",
     "scripts": {
         "start": "electron ."
