@@ -1,6 +1,6 @@
 {
-    "name": "wikia-gif-avatar",
-    "version": "1.1.1",
+    "name": "wikia-nitro",
+    "version": "1.1.2",
     "description": "Allows uploading of GIF avatars to Wikia",
     "homepage": "https://dev.wikia.com/wiki/Nitro",
     "author": {
@@ -16,6 +16,10 @@
         {
             "name": "Railfail536",
             "url": "https://spolecznosc.wikia.com/wiki/User:Railfail536"
+        },
+        {
+            "name": "Mix Gerder",
+            "url": "https://dev.wikia.com/wiki/User:Mix_Gerder"
         }
     ],
     "main": "main.js",
@@ -40,3 +44,4 @@
         "electron": "^1.2.0"
     }
 }
+
