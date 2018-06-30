@@ -1,6 +1,6 @@
 {
     "name": "wikia-nitro",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "Allows uploading of GIF avatars to Wikia",
     "homepage": "https://dev.wikia.com/wiki/Nitro",
     "author": {
@@ -10,8 +10,8 @@
     },
     "contributors": [
         {
-            "name": "RinaVanguard",
-            "url": "https://github.com/RinaVanguard"
+            "name": "VirtualKibou",
+            "url": "https://github.com/VirtualKibou"
         },
         {
             "name": "Railfail536",
@@ -35,13 +35,12 @@
     },
     "license": "CC-BY-SA-4.0",
     "dependencies": {
+        "eslint": ">=4.19.1",
         "jimp": ">=0.2.28",
-        "request": "^2.34",
-        "request-promise-native": ">=1.0.0",
-        "eslint": ">=4.19.1"
+        "request": "^2.87.0",
+        "request-promise-native": ">=1.0.0"
     },
     "devDependencies": {
-        "electron": "^1.2.0"
+        "electron": "^2.0.3"
     }
 }
-
