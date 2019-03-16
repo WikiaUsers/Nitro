@@ -1,12 +1,12 @@
 /**
  * main.js
  *
- * Main JS file of Nitro
+ * Main JS file of Nitro.
  */
 'use strict';
 
 /**
- * Importing modules
+ * Importing modules.
  */
 const http = require('request-promise-native'),
       fs = require('fs'),
@@ -15,19 +15,19 @@ const http = require('request-promise-native'),
       langs = require('./i18n/_list.json');
 
 /**
- * Constants
+ * Constants.
  */
 const jar = http.jar(),
       statuses = {};
 
 /**
- * Variables
+ * Variables.
  */
 let userId, loginForm, uploadForm, spinner, avatarFile, uploading, avatarSize,
     progress, i18n, autoLogin = true;
 
 /**
- * Sends an HTTP request to Service API
+ * Sends an HTTP request to Service API.
  * @param {String} path Path to request
  * @param {String} method HTTP method to use
  * @param {Object} form Form data to send
@@ -48,7 +48,7 @@ function request(path, method, form) {
 }
 
 /**
- * Shows the WDS spinner
+ * Shows the WDS spinner.
  */
 function showSpinner() {
     spinner.classList.remove('hidden');
@@ -56,14 +56,14 @@ function showSpinner() {
 }
 
 /**
- * Hides the WDS spinner
+ * Hides the WDS spinner.
  */
 function hideSpinner() {
     spinner.classList.add('hidden');
 }
 
 /**
- * Shorthand function for getting an element based on its ID
+ * Shorthand function for getting an element based on its ID.
  * @param {String} i ID of the element
  * @returns {Node} Element with the given ID
  */
@@ -72,7 +72,7 @@ function id(i) {
 }
 
 /**
- * Puts an notice below a form
+ * Puts an notice below a form.
  * @param {String} form Form below which to put the notice
  * @param {String} status "error" or "success" notice type
  * @param {String} text I18n key of the string to put
@@ -85,7 +85,7 @@ function notice(form, status, text) {
 }
 
 /**
- * Switches to upload mode
+ * Switches to upload mode.
  */
 function setUpload() {
     ['username', 'password'].forEach(function(el) {
@@ -96,7 +96,7 @@ function setUpload() {
 }
 
 /**
- * Callback after finding user's ID through the Service API
+ * Callback after finding user's ID through the Service API.
  * @param {Object} d Data returned by the Service API
  */
 function cbWhoami(d) {
@@ -108,18 +108,18 @@ function cbWhoami(d) {
 }
 
 /**
- * Callback after finding user's ID failed
+ * Callback after finding user's ID failed.
  * @param {Error} error HTTP error that occurred
  */
 function errWhoami(error) {
     if (error.statusCode !== 401) {
-        // Unknwon error
+        // Unknown error.
         console.error(error);
     }
 }
 
 /**
- * Sets the access_token cookie
+ * Sets the access_token cookie.
  * @param {String} token Access token to set
  */
 function setCookie(token) {
@@ -131,7 +131,7 @@ function setCookie(token) {
 }
 
 /**
- * Callback after logging in
+ * Callback after logging in.
  * @param {String} d Login API response
  */
 function cbLogin(d) {
@@ -145,7 +145,7 @@ function cbLogin(d) {
 }
 
 /**
- * Callback after logging in failed
+ * Callback after logging in failed.
  * @param {Error} error HTTP error that occurred
  */
 function errLogin(error) {
@@ -158,7 +158,7 @@ function errLogin(error) {
 }
 
 /**
- * Logs the user in
+ * Logs the user in.
  * @param {Event} e DOM event that triggered the login
  */
 function login(e) {
@@ -178,7 +178,7 @@ function login(e) {
 }
 
 /**
- * Callback after finding avatar's file size
+ * Callback after finding avatar's file size.
  * @param {Error} err Error that occurred
  * @param {Number} size Size of the file
  */
@@ -193,7 +193,7 @@ function cbLstat(err, {size}) {
 }
 
 /**
- * Shows the upload file dialog
+ * Shows the upload file dialog.
  * @param {Event} e DOM event that triggered enabling of the upload
  */
 function setupUpload(e) {
@@ -213,7 +213,7 @@ function setupUpload(e) {
 }
 
 /**
- * Callback after uploading the avatar
+ * Callback after uploading the avatar.
  * @param {Object} d Data returned by the upload API
  */
 function cbUpload(d) {
@@ -223,7 +223,7 @@ function cbUpload(d) {
 }
 
 /**
- * Callback after the upload progresses
+ * Callback after the upload progresses.
  */
 function cbProgress() {
     progress.textContent = `${Math.round(
@@ -232,7 +232,7 @@ function cbProgress() {
 }
 
 /**
- * Callback after the upload fails
+ * Callback after the upload fails.
  * @param {Error} error HTTP error that occurred
  */
 function errUpload(error) {
@@ -246,7 +246,7 @@ function errUpload(error) {
 }
 
 /**
- * Uploads the avatar
+ * Uploads the avatar.
  * @param {Event} e DOM event that triggered the upload
  */
 function upload(e) {
@@ -261,7 +261,7 @@ function upload(e) {
 }
 
 /**
- * Sets the user's language and updates messages
+ * Sets the user's language and updates messages.
  * @param {String} lang Language to set
  */
 function setLanguage(lang) {
@@ -288,7 +288,7 @@ function setLanguage(lang) {
 }
 
 /**
- * Event called after a language has been selected
+ * Event called after a language has been selected.
  * @param {ClickEvent} e DOM event that triggered the switch
  */
 function selectLang(e) {
@@ -296,7 +296,7 @@ function selectLang(e) {
 }
 
 /**
- * Sets up the DOM elements
+ * Sets up the DOM elements.
  */
 function setupDOM() {
     loginForm = id('login');
@@ -315,7 +315,7 @@ function setupDOM() {
 }
 
 /**
- * Sets up the current language
+ * Sets up the current language.
  */
 function setupLanguage() {
     const arr = app.getLocale().split('-');
@@ -324,7 +324,7 @@ function setupLanguage() {
 }
 
 /**
- * Sets up the language list
+ * Sets up the language list.
  */
 function setupList() {
     const list = document.querySelector('#language > #list > ul');
@@ -338,7 +338,7 @@ function setupList() {
 }
 
 /**
- * Sets up the token and continues to find user's ID
+ * Sets up the token and continues to find user's ID.
  */
 function setupToken() {
     const token = localStorage.getItem('token');
@@ -349,7 +349,7 @@ function setupToken() {
 }
 
 /**
- * Callback after the document loads
+ * Callback after the document loads.
  */
 function onload() {
     setupDOM();

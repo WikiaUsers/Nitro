@@ -20,6 +20,10 @@
         {
             "name": "Mix Gerder",
             "url": "https://dev.fandom.com/wiki/User:Mix_Gerder"
+        },
+        {
+            "name": "铁桶",
+            "url": "https://dev.fandom.com/wiki/User:铁桶"
         }
     ],
     "main": "main.js",
