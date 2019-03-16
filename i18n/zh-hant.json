@@ -1,0 +1,21 @@
+{
+    "language": "繁體中文",
+    "name": "Wikia Nitro",
+    "logo": "時機已到，每個人都有GIF頭像！",
+    "login": "登錄",
+    "logout": "登出",
+    "username": "用戶名",
+    "password": "密碼",
+    "filetype": "GIF圖片",
+    "select": "選擇",
+    "upload": "上傳",
+    "upload-header": "上傳頭像",
+    "login-success": "登錄成功！",
+    "login-badpass": "用戶名或密碼錯誤！",
+    "login-unknown": "登錄時發生未知錯誤。",
+    "login-auto": "自動登錄！",
+    "upload-success": "頭像上傳成功！",
+    "upload-badsize": "頭像大小超過512kb或不是方形。",
+    "upload-lstat": "無法確定頭像大小。",
+    "upload-unknown": "上傳頭像時發生未知錯誤。"
+}
