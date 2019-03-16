@@ -43,7 +43,7 @@ function request(path, method, form) {
         jar,
         json: !form,
         method,
-        uri: `https://services.wikia.com/${path}`
+        uri: `https://services.fandom.com/${path}`
     });
 }
 
@@ -114,7 +114,7 @@ function cbWhoami(d) {
 function errWhoami(error) {
     if (error.statusCode !== 401) {
         // Unknwon error
-        console.log(error);
+        console.error(error);
     }
 }
 
@@ -126,8 +126,8 @@ function setCookie(token) {
     const date = new Date();
     date.setFullYear(date.getFullYear() + 10);
     jar.setCookie(http.cookie(
-        `access_token=${token}; Expires=${date.toGMTString()}; Domain=wikia.com; Path=/; HttpOnly; hostOnly=false;`
-    ), 'http://wikia.com');
+        `access_token=${token}; Expires=${date.toGMTString()}; Domain=fandom.com; Path=/; HttpOnly; hostOnly=false;`
+    ), 'https://fandom.com');
 }
 
 /**
@@ -185,7 +185,7 @@ function login(e) {
 function cbLstat(err, {size}) {
     if (err) {
         notice('upload', 'error', 'upload-lstat');
-        console.log(err);
+        console.error(err);
     } else {
         avatarSize = size;
         uploadForm.submit.disabled = false;
@@ -219,7 +219,7 @@ function setupUpload(e) {
 function cbUpload(d) {
     hideSpinner();
     notice('upload', 'success', 'upload-success');
-    console.log(d);
+    console.info(d);
 }
 
 /**
@@ -242,7 +242,7 @@ function errUpload(error) {
     } else {
         notice('upload', 'error', 'upload-unknown');
     }
-    console.log(error);
+    console.error(error);
 }
 
 /**
