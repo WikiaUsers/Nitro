@@ -1,0 +1,21 @@
+{
+    "language": "Türkçe",
+    "name": "Wikia Nitro",
+    "logo": "Zaman geldi. Herkese GIF avatarları!",
+    "login": "Giriş Yap",
+    "logout": "Çıkış Yap",
+    "username": "Kullanıcı Adı",
+    "password": "Şifre",
+    "filetype": "GIF fotoğraflar",
+    "select": "Seç",
+    "upload": "Yükle",
+    "upload-header": "Avatar Güncelle",
+    "login-success": "Giriş başarılı!",
+    "login-badpass": "Yanlış kullanıcı adı ya da şifre!",
+    "login-unknown": "Giriş yaparken bilinmeyen bir hata oluştu.",
+    "login-auto": "Otomatik olarak giriş yapıldı!",
+    "upload-success": "Avatar başarıyla yüklendi!",
+    "upload-badsize": "Avatar 512KB'den büyük veya kare şeklinde değil.",
+    "upload-lstat": "Avatar boyutu belirlenemedi.",
+    "upload-unknown": "Avatar yüklenirken bilinmeyen bir hata oluştu."
+}
