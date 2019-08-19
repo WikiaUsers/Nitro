@@ -17,6 +17,9 @@ let mainWindow;
 function createWindow() {
     mainWindow = new BrowserWindow({
         height: 900,
+        webPreferences: {
+            nodeIntegration: true
+        },
         width: 1200
     });
     mainWindow.maximize();

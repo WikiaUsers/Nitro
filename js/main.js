@@ -196,16 +196,16 @@ function cbLstat(err, {size}) {
  * Shows the upload file dialog.
  * @param {Event} e DOM event that triggered enabling of the upload
  */
-function setupUpload(e) {
+async function setupUpload(e) {
     e.preventDefault();
-    const files = dialog.showOpenDialog({
+    const dialogResult = await dialog.showOpenDialog({
         filters: [{
             extensions: ['gif'],
             name: i18n.filetype
         }]
     });
-    if (files) {
-        avatarFile = files[0];
+    if (!dialogResult.canceled) {
+        avatarFile = dialogResult.filePaths[0];
         fs.lstat(avatarFile, cbLstat);
     } else {
         uploadForm.submit.disabled = true;
