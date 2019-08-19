@@ -18,7 +18,7 @@ zip -qr linux-arm64 wikia-nitro-linux-arm64
 zip -qr linux-armv7l wikia-nitro-linux-armv7l
 # Mac.
 echo "Packaging macOS builds..."
-zip -qr mas-x64 wikia-nitro-mas-x64
+# zip -qr mas-x64 wikia-nitro-mas-x64
 zip -qr darwin-x64 wikia-nitro-darwin-x64
 
 echo "Done."
