@@ -6,7 +6,7 @@ rm -rf wikia-nitro-*
 rm -rf *.zip
 # Generate all builds.
 echo "Generating new builds..."
-electron-packager .. --all --electron-version=4.1.0
+electron-packager .. --all --electron-version=6.0.2
 # Windows.
 echo "Packaging Windows builds..."
 zip -qr win32-ia32 wikia-nitro-win32-ia32

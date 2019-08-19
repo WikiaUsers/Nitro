@@ -1,6 +1,6 @@
 {
     "name": "wikia-nitro",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "description": "Allows uploading of GIF avatars to Fandom",
     "homepage": "https://dev.fandom.com/wiki/Nitro",
     "author": {
@@ -24,6 +24,10 @@
         {
             "name": "铁桶",
             "url": "https://dev.fandom.com/wiki/User:铁桶"
+        },
+        {
+            "name": "BaRaN6161TURK",
+            "url": "https://dev.fandom.com/wiki/User:BaRaN6161TURK"
         }
     ],
     "main": "main.js",
@@ -39,12 +43,12 @@
     },
     "license": "CC-BY-SA-4.0",
     "dependencies": {
-        "jimp": ">=0.6.0",
+        "jimp": ">=0.6.4",
         "request": ">=2.88.0",
         "request-promise-native": ">=1.0.7"
     },
     "devDependencies": {
-        "electron": ">=4.1.0",
-        "eslint": ">=5.15.2"
+        "electron": ">=6.0.2",
+        "eslint": ">=6.2.0"
     }
 }
