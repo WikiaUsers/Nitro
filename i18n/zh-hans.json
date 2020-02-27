@@ -1,7 +1,7 @@
 {
     "language": "简体中文",
     "name": "Wikia Nitro",
-    "logo": "时机已到，每个人都有GIF头像！",
+    "logo": "就是现在，每个人都有GIF头像！",
     "login": "登录",
     "logout": "登出",
     "username": "用户名",
@@ -15,7 +15,7 @@
     "login-unknown": "登录时发生未知错误。",
     "login-auto": "自动登录！",
     "upload-success": "头像上传成功！",
-    "upload-badsize": "头像大小超过512kb或不是方形。",
+    "upload-badsize": "头像大小超过512kb或不是方形图片。",
     "upload-lstat": "无法确定头像大小。",
     "upload-unknown": "上传头像时发生未知错误。"
 }
