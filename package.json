@@ -43,13 +43,13 @@
     },
     "license": "CC-BY-SA-4.0",
     "dependencies": {
-        "jimp": ">=0.9.3",
-        "mkdirp": ">=0.5.3",
+        "jimp": ">=0.14.0",
+        "mkdirp": ">=1.0.4",
         "request": ">=2.88.2",
-        "request-promise-native": ">=1.0.8"
+        "request-promise-native": ">=1.0.9"
     },
     "devDependencies": {
-        "electron": ">=8.2.4",
-        "eslint": ">=6.8.0"
+        "electron": ">=9.1.2",
+        "eslint": ">=7.5.0"
     }
 }
