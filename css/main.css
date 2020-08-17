@@ -20,6 +20,13 @@ body {
     margin-top: 19px;
     color: white;
     background-color: #39424D;
+
+    display: grid;
+    grid-template-columns: 0 auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: ". name language" ". logo .";
+    justify-items: center;
+    align-items: baseline;
 }
 
 #header h1 {
@@ -28,6 +35,11 @@ body {
     margin-top: 0.2rem;
     padding-bottom: 7px;
     font-weight: 700;
+
+    grid-area: name-start;
+    grid-column-start: name-start;
+    grid-column-end: language-end;
+    /* align-self: center; */
 }
 
 #header h2 {
@@ -35,6 +47,10 @@ body {
     font-weight: normal;
     padding: 0;
     margin: 0;
+
+    grid-area: logo-start;
+    grid-column-start: logo-start;
+    grid-column-end: language-end;
 }
 
 #container {
@@ -145,6 +161,10 @@ body {
     font-size: 12px;
     margin-right: 5px;
     position: relative;
+
+    grid-area: language-start;
+    justify-self: end;
+    /* align-self: center; */
 }
 
 #language svg {
