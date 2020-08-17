@@ -22,6 +22,7 @@ function createWindow() {
         },
         width: 1200
     });
+    mainWindow.removeMenu();
     mainWindow.maximize();
     mainWindow.loadURL(`file://${__dirname}/index.html`);
     mainWindow.on('closed', function() {
