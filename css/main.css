@@ -23,6 +23,7 @@ body {
     color: #39424D;
     margin: 0;
     padding: 0;
+    line-height: 150%;
     text-align: center;
     background-color: #F6F6F6;
     font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -212,6 +213,10 @@ body {
     vertical-align: text-top;
 }
 
+#language:hover svg {
+    transform: rotate(180deg);
+}
+
 #language #list {
     background-color: white;
     border: 1px solid #CCC;
@@ -282,7 +287,6 @@ body {
     bottom: -1px;
     content: "";
     display: none;
-    top: 0;
     height: 0;
     left: 50%;
     margin-left: -9px;
