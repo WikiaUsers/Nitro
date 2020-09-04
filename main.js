@@ -17,11 +17,13 @@ let mainWindow;
 function createWindow() {
     mainWindow = new BrowserWindow({
         height: 900,
+        title: app.getName(),
         webPreferences: {
             nodeIntegration: true
         },
         width: 1200
     });
+    mainWindow.setMenuBarVisibility(false);
     mainWindow.maximize();
     mainWindow.loadURL(`file://${__dirname}/index.html`);
     mainWindow.on('closed', function() {
