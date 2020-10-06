@@ -57,7 +57,7 @@
         "request-promise-native": ">=1.0.9"
     },
     "devDependencies": {
-        "electron": "^9.2.1",
+        "electron": "^9.3.0",
         "eslint": "^7.8.0"
     }
 }
