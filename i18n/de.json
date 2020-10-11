@@ -1,0 +1,21 @@
+{
+    "language": "Deutsch",
+    "name": "Fandom Nitro",
+    "logo": "Die Zeit ist gekommen. GIF-Avatare für jeden!",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "filetype": "GIF-Bilder",
+    "select": "Auswählen",
+    "upload": "Hochladen",
+    "upload-header": "Avatar hochladen",
+    "login-success": "Anmeldung war erfolgreich!",
+    "login-badpass": "Ungültiger Benutzername oder falsches Passwort!",
+    "login-unknown": "Ein unbekannter Fehler trat während der Anmeldung auf.",
+    "login-auto": "Automatisch angemeldet!",
+    "upload-success": "Der Avatar wurde erfolgreich hochgeladen!",
+    "upload-badsize": "Der Avatar hat eine Dateigröße von über 512 kB oder ist nicht quadratisch.",
+    "upload-lstat": "Die Größe des Avatars konnte nicht ermittelt werden.",
+    "upload-unknown": "Ein unbekannter Fehler trat während des Hochladens des Avatars auf."
+}
