@@ -1,6 +1,6 @@
 {
     "name": "fandom-nitro",
-    "version": "1.1.9",
+    "version": "1.1.10",
     "description": "Allows uploading of GIF avatars to Fandom",
     "homepage": "https://dev.fandom.com/wiki/Nitro",
     "author": {
@@ -51,13 +51,11 @@
     },
     "license": "CC-BY-SA-4.0",
     "dependencies": {
-        "jimp": "^0.16.1",
-        "mkdirp": ">=1.0.4",
         "request": ">=2.88.2",
         "request-promise-native": ">=1.0.9"
     },
     "devDependencies": {
-        "electron": "^9.2.1",
-        "eslint": "^7.8.0"
+        "electron": "11.3.0",
+        "eslint": ">=7.22.0"
     }
 }

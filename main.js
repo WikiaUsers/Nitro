@@ -19,6 +19,7 @@ function createWindow() {
         height: 900,
         title: app.getName(),
         webPreferences: {
+            enableRemoteModule: true,
             nodeIntegration: true
         },
         width: 1200
